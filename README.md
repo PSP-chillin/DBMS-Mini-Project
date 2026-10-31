@@ -28,6 +28,10 @@ Or start both local databases with:
 docker compose up -d
 ```
 
+The Compose MySQL container is exposed on host port `3307` to avoid conflicts
+with an existing local MySQL installation. Use `MYSQL_PORT=3307` in `.env.local`
+when connecting to the Compose database.
+
 The procedure accepts one booking only when every requested night has sellable
 inventory. It locks each inventory row before incrementing `booked_rooms`, so
 concurrent requests cannot consume the same final slot.

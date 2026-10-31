@@ -3,7 +3,7 @@ USE hotel_reservations;
 INSERT INTO hotel_franchises (franchise_name, contact_email, contact_number, address)
 VALUES ('Harborlight Hospitality Group', 'hq@harborlight.example', '+91-9000000000', '1 Marina Road, Chennai');
 
-INSERT INTO hotels (name, city, address) VALUES
+INSERT INTO hotels (name, city, address, state, country, email, phone, rating, franchise_id) VALUES
   ('Harborlight Grand', 'Chennai', '1 Marina Road', 'Tamil Nadu', 'India', 'grand@harborlight.example', '+91-9000000011', 5, 1),
   ('Harborlight Residency', 'Bengaluru', '22 Residency Road', 'Karnataka', 'India', 'residency@harborlight.example', '+91-9000000012', 4, 1),
   ('Harborlight Suites', 'Hyderabad', '8 Jubilee Hills', 'Telangana', 'India', 'suites@harborlight.example', '+91-9000000013', 4, 1);
